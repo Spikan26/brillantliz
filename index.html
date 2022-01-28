@@ -59,7 +59,7 @@
 				url: "./Characters.csv",
 				header: "Access-Control-Allow-Origin: *",
 				dataType: "csv",
-				success: function(data) {processData(data);}
+				success: console.log("test: " + data);}
 			});
 			
 			function processData(allText) {
