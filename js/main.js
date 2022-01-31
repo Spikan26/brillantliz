@@ -23,15 +23,30 @@ function parseCsv(csv){
     //Col
   	for (var j = 0; j < cols.length ; j++){
   		
+		//Avatar picture
       if(j == 0){
         table_current += "<td class='picture "+cols[j]+"'><img style='height:75px; width:75px;' src='characters_img/"+cols[j]+".png'></td>"
       } else if (j == 1) {
-        //Add link to img for the JP name
+        //Add link to img for the JP name [NOT WORKING YET]
         table_current += "<td class='character_picture' id='"+cols[0]+"'>"+cols[j]+"</td>"
+      } else if (j == 2) {
+        //Icon for Type
+        table_current += "<td class='element_icon "+cols[j]+"'><img src='icon/"+cols[j]+".png'>   "+cols[j]+"</td>"
       } else if (j == 3) {
-        //Icon for Element
-        table_current += "<td class='element_icon "+cols[j]+"'><img src='characters_img/"+cols[j]+".png'>   "+cols[j]+"</td>"
-      } else {
+        //Icon for Attribut
+        table_current += "<td class='element_icon "+cols[j]+"'><img src='icon/"+cols[j]+".png'>   "+cols[j]+"</td>"
+      } else if (j == 4 || j == 5 || j == 6 || j == 7) {
+        //Icon for Attribut
+        table_current += "<td class='normal_attack'>"+cols[j]+"</td>"
+      } else if (j == 8 || j == 9 || j == 10 || j == 11 || j == 12) {
+        //Icon for Attribut
+        table_current += "<td class='skill_attack'>"+cols[j]+"</td>"
+      } else if (j == 13 || j == 14 || j == 15 || j == 16 || j == 17) {
+        //Icon for Attribut
+        table_current += "<td class='special_attack'>"+cols[j]+"</td>"
+      }
+	  
+	  else {
         table_current += "<td>"+cols[j]+"</td>"
       }
 

@@ -32,7 +32,6 @@ div.dataTables_wrapper {
 	text-align: left;
 }
 
-.Earth { background-color: #fff591; }
-.Water { background-color: #91daff; }
-.Fire { background-color: #ffac91; }
-.Wind { background-color: #9eff91; }
+.normal_attack { background-color: #FFD573; }
+.skill_attack { background-color: #FFCA4E; }
+.special_attack { background-color: #FFBF29; }
