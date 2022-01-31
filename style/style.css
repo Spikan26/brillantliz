@@ -8,6 +8,11 @@
 	font-size: smaller;
 }
 
+table.dataTable tbody td {
+    word-break: break-word;
+    vertical-align: top;
+}
+
 div.dataTables_wrapper {
         width: 100%;
         margin: 0 auto;

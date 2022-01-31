@@ -61,7 +61,12 @@ function parseCsv(csv){
   //Datatable
   $('#table_id').DataTable({
     "scrollX": true,
-	"autoWidth": true
+	"autoWidth": true,
+	"columnDefs": [
+      { "width": "200px", "targets": 7 },
+      { "width": "200px", "targets": 11 },
+      { "width": "200px", "targets": 16 }
+    ]
   });
 
 
