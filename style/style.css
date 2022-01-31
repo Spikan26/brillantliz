@@ -31,11 +31,21 @@ div.dataTables_wrapper {
 
 .attribut_icon {
 	text-align: left;
+	font-size: smaller;
+}
+
+.attribut_icon img {
+	text-align: left;
 	width: 45px;
 	height: 45px;
 }
 
 .type_icon {
+	text-align: left;
+	font-size: smaller;
+}
+
+.type_icon img {
 	text-align: left;
 	width: 45px;
 	height: 45px;
