@@ -5,6 +5,7 @@
 	margin: 0 auto;
 	padding: 15px;
 	border-radius: 15px;
+	font-size: smaller;
 }
 
 div.dataTables_wrapper {
@@ -28,9 +29,19 @@ div.dataTables_wrapper {
 }
 
 
-.element_icon {
+.attribut_icon {
 	text-align: left;
+	width: 45px;
+	height: 45px;
 }
+
+.type_icon {
+	text-align: left;
+	width: 45px;
+	height: 45px;
+}
+
+
 
 .normal_attack { background-color: #FFD573; }
 .skill_attack { background-color: #FFCA4E; }
