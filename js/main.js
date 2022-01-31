@@ -60,7 +60,8 @@ function parseCsv(csv){
 
   //Datatable
   $('#table_id').DataTable({
-    "scrollX": true	
+    "scrollX": true,
+	"autoWidth": true
   });
 
 
