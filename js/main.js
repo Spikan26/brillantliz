@@ -24,13 +24,13 @@ function parseCsv(csv){
   	for (var j = 0; j < cols.length ; j++){
   		
       if(j == 0){
-        table_current += "<td class='picture "+cols[j]+"'><img style='height:75px; width:75px;' src='weapon_img/"+cols[j]+".png'></td>"
+        table_current += "<td class='picture "+cols[j]+"'><img style='height:75px; width:75px;' src='characters_img/"+cols[j]+".png'></td>"
       } else if (j == 1) {
         //Add link to img for the JP name
-        table_current += "<td class='weapon_picture' id='"+cols[0]+"'>"+cols[j]+"</td>"
+        table_current += "<td class='character_picture' id='"+cols[0]+"'>"+cols[j]+"</td>"
       } else if (j == 3) {
         //Icon for Element
-        table_current += "<td class='element_icon "+cols[j]+"'><img src='icon/"+cols[j]+".png'>   "+cols[j]+"</td>"
+        table_current += "<td class='element_icon "+cols[j]+"'><img src='characters_img/"+cols[j]+".png'>   "+cols[j]+"</td>"
       } else {
         table_current += "<td>"+cols[j]+"</td>"
       }
@@ -49,8 +49,8 @@ function parseCsv(csv){
   });
 
 
-  $('.weapon_picture').click(function(event){
-    var path = "<img src='weapon_img/"+event.currentTarget.id+".png'>";
+  $('.character_picture').click(function(event){
+    var path = "<img src='characters_img/"+event.currentTarget.id+".png'>";
     $('.modal-body').html(path);
     $('#myModal').modal('show');
   });
