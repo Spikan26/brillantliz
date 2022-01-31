@@ -19,4 +19,3 @@ gloria,Gloria,Support,Physical,50,Heal,Single Ally,-,145,Attack,Single Front row
 agnes,Agnes,Support,Magical,50,Heal,Single Ally,-,60,Heal,Single Ally,Cancel all ally's debuff,34 MP,160,Attack,Multi Front Row,Cancel all target's buff. Inflict Speed reduction Lv1 for 4 turns,64 MP
 nikolai,Nikolai,Support,Magical,130,Attack,Single Front Row,-,80,Heal,Single Ally,Grants Magic defense increase Lv1 for 4 turns to the ally,36 MP,80,Heal,Any line of allies,Grants Regen and Speed increase Lv1 for 4 turns,60 MP
 selene,Selene,Support,Magical,50,Heal,Single Ally,-,60,Heal,Any line of allies,Shield recovery by 50% for target.,37 MP,85,Heal,Single Ally,Grants MP cost reduction for 3 turns. Grants Attack increase Lv2 for 4 turns,43 MP
-
