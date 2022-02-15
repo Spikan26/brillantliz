@@ -29,10 +29,10 @@ function parseCsv(csv){
         table_current += "<td class='character_picture' id='"+cols[0]+"'>"+cols[j]+"</td>"
       } else if (j == 2) {
         //Icon for Type
-        table_current += "<td class='type_icon "+cols[j]+"'><img src='icon/"+cols[j]+".png'>   "+cols[j]+"</td>"
+        table_current += "<td class='type_icon "+cols[j]+"'><img style='width: 50px;' src='icon/"+cols[j]+".png'>   "+cols[j]+"</td>"
       } else if (j == 3) {
         //Icon for Attribut
-        table_current += "<td class='attribut_icon "+cols[j]+"'><img src='icon/"+cols[j]+".png'>   "+cols[j]+"</td>"
+        table_current += "<td class='attribut_icon "+cols[j]+"'><img style='width: 50px;'src='icon/"+cols[j]+".png'>   "+cols[j]+"</td>"
       } else if (j == 4 || j == 5 || j == 6 || j == 7) {
         //Icon for Attribut
         table_current += "<td class='normal_attack'>"+cols[j]+"</td>"
