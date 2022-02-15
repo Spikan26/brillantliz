@@ -84,7 +84,7 @@ $(document).ready( function () {
 	//Get the data from the file
 		$.ajax({
   			type: "GET",
-  			url: "characters.csv",
+  			url: "csv/characters.csv",
   			dataType: "text",
   			success: parseCsv
 			});

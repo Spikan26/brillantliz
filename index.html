@@ -1,57 +1,233 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Brillant Liz</title>
-		
-		<!-- jQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		
-		<!-- Bootstrap -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		
-		<!-- Datatables -->
-		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
-		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
-		
-		<!-- Custom -->
-		<script src="js/jquery_csv.js"></script>
-		<script type="text/javascript" charset="utf8" src="js/main.js"></script>
-		
-		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="style/style.css">
-		
-		
-	</head>
+<html lang="en">
 
-	<body>
-		<div id="table_container">
-			<table id="table_id" class="display nowrap" style="width: 100%">
-				<thead id="mainheader">
+<head>
 
-				</thead>
-				<tbody id="maintable">
-				
-				</tbody>
-			</table>
-		</div>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Brillant Liz</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                
+                <div class="sidebar-brand-text mx-3">Brillant Liz</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Main Page -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-home"></i>
+                    <span>Main Page</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Translation
+            </div>
+			
+			<!-- Nav Item - Characters -->
+            <li class="nav-item">
+                <a class="nav-link" href="characters.html">
+                    <i class="fas fa-fw fa-users"></i>
+                    <span>Characters</span></a>
+            </li>
+
+			<!-- Nav Item - Character's Equipments -->
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-fw fa-book"></i>
+                    <span>Character's Equipments</span></a>
+            </li>
+			
+			<!-- Nav Item - Job asterisk -->
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-fw fa-gem"></i>
+                    <span>Job asterisk</span></a>
+            </li>
+            
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Guide coming soon
+            </div>
 
 
-		<!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content">
-					<div class="modal-body">
-						<img src="characters_img/liz.png">
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Tables</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+
+
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+					<!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+				</nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Welcome to Brillant Liz</h1>
+                    </div>
+					<p>This website regroup guide and translation for the mobile game <a
+										target="_blank" rel="nofollow" href="https://www.jp.square-enix.com/bdbl_SP/">BRAVELY DEFAULT BRILLANT LIGHT</a><br>
+										I do not own any ressources coming from the game. All right goes to their respective owner.</p>
+
+
+					<div class="col-lg-6 mb-4">
+
+						<!-- Illustrations -->
+						<div class="card shadow mb-4">
+							<div class="card-header py-3">
+								<h6 class="m-0 font-weight-bold text-primary">Current Event</h6>
+							</div>
+							<div class="card-body">
+								<div class="text-center">
+									<img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"
+										src="img/Elephant King's Outcry.jfif" alt="Elephant King's Outcry">
+								</div>
+								
+								<p class="h4 mb-3 text-center text-gray-800">Elephant King's Outcry</p>
+								
+								<div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div id="EventDateBegin" class="h6 mb-0 mr-3 text-gray-600">02/08/2022 15:15</div>
+                                                </div>
+												
+                                                <div class="col">
+                                                    <div class="progress progress-sm mr-2">
+                                                        <div id="EventProgressBar" class="progress-bar bg-info" role="progressbar"
+                                                            style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+												
+												<div class="col-auto">
+                                                    <div id="EventDateEnd" class="h6 mb-0 mr-3 text-gray-600">02/22/2022 14:59</div>
+                                                </div>
+                                            </div>
+								
+							</div>
+						</div>
+
 					</div>
 				</div>
+
 			</div>
+                <!-- /.container-fluid -->
+
+			<!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Made by Spikan. This website is made for educational and research purpose.</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
 		</div>
-	
-	</body>
+            <!-- End of Main Content -->
+            
+
+	</div>
+	<!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+	<script>
+		//////////
+		//Get the progress of the event date
+		//////////
+		let eventBegin = document.getElementById("EventDateBegin").textContent;
+		let eventEnd = document.getElementById("EventDateEnd").textContent;
+
+		let eventHoursDuration = Date.parse(eventEnd) - Date.parse(eventBegin);
+		let currentDateProgress = Date.now() - parseInt(Date.parse(eventBegin));
+
+		let percentProgress = Math.round((currentDateProgress / eventHoursDuration)*100)
+
+		document.getElementById("EventProgressBar").style.width = percentProgress + "%";
+		
+	</script>
+
+
+</body>
 
 </html>
