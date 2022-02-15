@@ -36,13 +36,13 @@ function parseCsv(csv){
       } else if (j == 4) {
         //Weapon image
         table_current += "<td class='weapon_img "+cols[j]+"'><img style='height:75px; width:75px;' src='characters_weapon/"+cols[j]+".png'></td>"
-      } else if (j == 9) {
+      } else if (j == 8) {
         //Artifact 1
         table_current += "<td class='artifact1_img "+cols[j]+"'><img style='height:75px; width:75px;' src='characters_artefact/"+cols[j]+".png'></td>"
-      } else if (j == 11) {
+      } else if (j == 10) {
         //Artifact 2
         table_current += "<td class='artifact2_img "+cols[j]+"'><img style='height:75px; width:75px;' src='characters_artefact/"+cols[j]+".png'></td>"
-      } else if (j == 13) {
+      } else if (j == 12) {
         //Artifact 3
         table_current += "<td class='artifact3_img "+cols[j]+"'><img style='height:75px; width:75px;' src='characters_artefact/"+cols[j]+".png'></td>"
       }
