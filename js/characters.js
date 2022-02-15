@@ -5,16 +5,13 @@ function parseCsv(csv){
 
   //Header
   var cols_header = rows[0].split(',');
-  var table_header = '<tr>'
+  var table_header = '<thead><tr>'
 
   for (var k = 0; k < cols_header.length ; k++){
     table_header += '<td>'+cols_header[k]+'</td>'
   }
 
-  table_header += '</tr>';
-  $('#mainheader').html(table_header);
-  $('#mainfooter').html(table_header);
-
+  table_header += '</tr></thead><tbody>';
 
   //Data
   for (var i = 1; i < rows.length ; i++){
@@ -56,8 +53,10 @@ function parseCsv(csv){
   	table_total += table_current+'</tr>'
   }
 
+  table_total += '</tbody>'
+  
   //Final table with all data
-  $('#maintable').html(table_total);
+  $('#characters_dataTable').html(table_header + table_total);
 
   //Datatable
   $('#characters_dataTable').DataTable({
